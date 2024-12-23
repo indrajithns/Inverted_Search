@@ -77,7 +77,7 @@ A file used to automate the compilation of the C source files and create the exe
 1. **Build**: 
    - Run `make` to compile the project.
 2. **Run**: 
-   - Use `./main.exe` to interact with the application.
+   - Use `./main.exe file1.txt file2.txt` to interact with the application.
 3. **Commands**: 
    - The program supports commands to create the database, search, display, save, and update the database.
 
