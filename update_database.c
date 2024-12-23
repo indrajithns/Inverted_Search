@@ -1,8 +1,19 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Update Database Function
- */
+ * File: update_database.c
+ * Implements functionality for updating the inverted search database.
+ *
+ * This file provides the function to update the inverted search database by adding a new file to the
+ * file list and re-creating the database for that file. It checks the file's validity, including availability
+ * and content before adding it to the database.
+ *
+ * Functions:
+ * - `int update_database(Wlist *head[], Flist **f_head)`:
+ *   - Prompts the user for the file name and checks its validity (availability and content).
+ *   - Adds the valid file to the file linked list using the `to_create_list_of_files` function.
+ *   - If the file is added successfully, it triggers the `create_database` function to process the file's data.
+ *   - If the file is empty or unavailable, the function reports the failure and returns `FAILURE`.
+ *   - If the file is successfully added, the database is updated.
+*/
 
 #include "inverted_search.h"
 

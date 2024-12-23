@@ -1,8 +1,17 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Create Database Function
- */
+ * File: create_database.c
+ * Implementation of functions to create and update the inverted index database.
+ *
+ * This file contains the functions for processing a list of files, reading their contents, 
+ * and building an inverted index. The index maps words to the files they appear in and 
+ * tracks the frequency of each word in the files.
+ *
+ * Functions:
+ * - `create_database`: Traverses the file list and reads each file to update the index.
+ * - `read_datafile`: Reads words from a file and inserts or updates them in the index.
+ * - `update_word_count`: Updates the frequency of a word in the database or adds new file entries.
+*/
+
 
 #include "inverted_search.h"
 

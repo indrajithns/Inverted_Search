@@ -1,8 +1,21 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Program for Inverted Search
- */
+ * File: main.c
+ * Entry point for the Inverted Search application.
+ *
+ * This file contains the main function for the Inverted Search project.
+ * The program builds an inverted index for words in multiple files, allowing
+ * users to search, update, display, and save the database.
+ *
+ * Functionalities:
+ * - Validates command-line arguments to ensure files are provided.
+ * - Creates a linked list of files for further processing.
+ * - Provides a menu-driven interface for the following operations:
+ *   1. Create Database: Processes files to build an inverted index.
+ *   2. Display Database: Displays the word list and associated details.
+ *   3. Update Database: Adds new files to the existing database.
+ *   4. Search: Searches for a specific word in the database.
+ *   5. Save Database: Saves the current state of the database to a file.
+*/
 
 #include "inverted_search.h" 
 

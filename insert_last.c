@@ -1,8 +1,15 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Insert Last Function for Linked List
- */
+ * File: insert_last.c
+ * Implementation of functions to insert nodes into the word list and update the link table.
+ *
+ * This file contains functions to insert new words into the word linked list (Wlist)
+ * and to create and update the associated link table (Ltable) for tracking word occurrences 
+ * in specific files.
+ *
+ * Functions:
+ * - `insert_at_last`: Adds a new word to the end of the Wlist and initializes its associated Ltable node.
+ * - `update_link_table`: Creates and links a new Ltable node for a word, storing its file name and initial word count.
+*/
 
 #include "inverted_search.h" 
 

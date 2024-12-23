@@ -1,8 +1,15 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Display Database Function
- */
+ * File: display.c
+ * Implementation of functions to display the inverted index database.
+ *
+ * This file contains functions to traverse and print the contents of the inverted index.
+ * The index is displayed with details such as word, the number of files containing the word, 
+ * and the frequency of the word in each file.
+ *
+ * Functions:
+ * - `display_database`: Iterates through the index and displays its contents in a formatted structure.
+ * - `print_word_count`: Prints the word and its file-related details including frequency and file names.
+*/
 
 #include "inverted_search.h" 
 int display_database( Wlist *head[] )

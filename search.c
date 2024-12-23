@@ -1,8 +1,17 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Search Function
- */
+ * File: search.c
+ * Implements the search functionality for the inverted search database.
+ *
+ * This file contains the implementation of the search function used to find a specific word
+ * within the inverted search database. The function checks if the word exists in the database,
+ * and if so, displays the details of its occurrences across various files.
+ *
+ * Functions:
+ * - `int search(Wlist *head, char *word)`:
+ *   - Searches for a word in the linked list of `Wlist` nodes.
+ *   - If the word is found, it prints the files in which the word appears and how many times.
+ *   - If the word is not found in any list node, it prints a message stating that the word was not found.
+*/
 
 #include "inverted_search.h" 
 int search( Wlist *head, char *word)

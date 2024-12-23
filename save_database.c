@@ -1,8 +1,19 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Save Database Function
- */
+ * File: save_database.c
+ * Handles saving the inverted search database to a file.
+ *
+ * This file contains the implementation for saving the current state of the
+ * inverted search database to a user-specified file. The database is saved
+ * in a readable format, including words, their occurrences, and associated file details.
+ *
+ * Functions:
+ * - `void save_database(Wlist *head[])`:
+ *   - Iterates through the database and calls `write_databasefile` for each non-empty index.
+ *   - Opens the user-specified file and ensures all data is saved.
+ * - `int write_databasefile(Wlist *head, FILE* databasefile)`:
+ *   - Traverses the word list and associated file data, writing them to the file.
+ *   - Includes detailed information such as word occurrences and file counts.
+*/
 
 #include "inverted_search.h" 
 

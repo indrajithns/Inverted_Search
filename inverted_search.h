@@ -1,8 +1,25 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :Inverted Search
- */
+ * File: inverted_search.h
+ * Header file for the Inverted Search project.
+ *
+ * This header file contains the necessary includes, macros, structure definitions,
+ * and function prototypes for implementing an inverted index. The program builds
+ * an index of words found in multiple files, mapping each word to the files it appears
+ * in and tracking the frequency of each word in those files.
+ *
+ * Key Components:
+ * - Macros: Definitions for success, failure, file status codes, and size limits.
+ * - Structures:
+ *   - `Flist`: Represents a linked list of file names.
+ *   - `Ltable`: Represents a linked list of file-specific word counts.
+ *   - `Wlist`: Represents a linked list of words with associated file and frequency details.
+ * - Functions:
+ *   - File validation and linked list creation.
+ *   - Reading and processing files to create and update the inverted index.
+ *   - Displaying, searching, and saving the database.
+ *   - Hash function for indexing words based on their first character.
+*/
+
 
 #ifndef INVERTED_SEARCH_H
 #define INVERTED_SEARCH_H

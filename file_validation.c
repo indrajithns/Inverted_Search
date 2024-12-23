@@ -1,8 +1,15 @@
 /*
-Name        :Indrajith
-Date        :02-10-24
-Description :File Validation Function
- */
+ * File: file_validation.c
+ * Implementation of file validation and file list creation functions.
+ *
+ * This file contains functions to validate the availability and content of files
+ * and to create a linked list of valid files for further processing.
+ *
+ * Functions:
+ * - `file_validation_n_file_list`: Validates each file, checks for duplicates, and adds valid files to a linked list.
+ * - `isFileEmpty`: Checks whether a file exists and has content.
+ * - `to_create_list_of_files`: Adds a new file to the linked list if it is not a duplicate.
+*/
 
 #include"inverted_search.h" 
 
