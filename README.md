@@ -49,14 +49,54 @@ Provides functionality to add new files to the database, validate their content,
 ### `Makefile`
 A file used to automate the compilation of the C source files and create the executable.
 
-## How to Use
+## Usage
 
-1. **Compile the Program**: Run `make` to compile the program and generate the executable.
-2. **Create a Database**: Use the `create_database` function to process text files and build the inverted index.
-3. **Search for a Word**: Use the `search` function to look for a word in the database and display its occurrences in various files.
-4. **Display Database**: Use the `display_database` function to print out the contents of the database.
-5. **Save Database**: Use the `save_database` function to save the current database state to a file.
-6. **Update Database**: Add new files to the database using the `update_database` function.
+### 1. **Creating the Database**
+
+   To create a database, select the option to create a new database from the main menu. The program will process all the provided files and create the database.
+
+### 2. **Displaying the Database**
+
+   You can display the contents of the database using the "Display Database" option. This will show you the indexed words and the files they appear in along with the occurrence count.
+
+### 3. **Updating the Database**
+
+   If you want to add new files to the database, use the "Update Database" option. You will be prompted to enter the file name, and the program will validate the file before adding it to the database.
+
+### 4. **Searching the Database**
+
+   To search for a word, choose the "Search" option. Enter the word you want to search for, and the program will display the files where the word appears along with its occurrence count.
+
+### 5. **Saving the Database**
+
+   You can save the current database to a file by selecting the "Save Database" option. You will be prompted to enter the filename for the saved database.
+
+   
+### Instructions:
+
+1. **Build**: 
+   - Run `make` to compile the project.
+2. **Run**: 
+   - Use `./main.exe` to interact with the application.
+3. **Commands**: 
+   - The program supports commands to create the database, search, display, save, and update the database.
+
+
+## Functions
+
+- **create_database()**: Creates the database by processing the files.
+- **display_database()**: Displays the current content of the database.
+- **update_database()**: Updates the database with a new file.
+- **search()**: Searches for a word in the database.
+- **save_database()**: Saves the database to a file.
+
+## Error Handling
+
+The program provides feedback for the following error cases:
+
+- **File Not Available**: The file doesn't exist or cannot be accessed.
+- **File Empty**: The file has no content.
+- **File Repeated**: The file has already been added to the database.
 
 
 
